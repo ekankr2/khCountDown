@@ -7,7 +7,7 @@ const secondsEl = document.getElementById('seconds');
 // const : 재선언, 재할당 모두 불가능
 
 // 종강 날짜
-const end = new Date("2022-01-01,00:00:00");
+const end = new Date("2021-12-08,00:00:00");
 
 function countdown() {
     const endDate = new Date(end).getTime();
