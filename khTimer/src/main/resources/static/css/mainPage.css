@@ -10,14 +10,15 @@ body {
     background-position: center center;
     min-height: 93vh;
     color: white;
+    margin: 0;
+}
+#page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-
 }
 h1 {
-    font-weight: normal;
+    font-weight: bold;
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 4.5rem;
     margin-top: 5rem;
@@ -38,4 +39,9 @@ h1 {
 }
 .times {
     font-size: 1.3rem;
+}
+#bottom {
+    text-align: right;
+    margin-top: 10rem;
+    margin-right: 5%;
 }
