@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("/img/background3.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 95vh;
+    margin: 0;
+    color: white;
+}
