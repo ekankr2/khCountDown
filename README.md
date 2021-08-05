@@ -2,7 +2,7 @@
 
 space for making mini projects
 
--------------------------
+   
 
 ## KHTimer
 
@@ -17,7 +17,7 @@ a D-Day timer for the end of KH Academy course.
     * CSS3
     * JavaScript
 
-<img width="80%" src="https://user-images.githubusercontent.com/83811729/128400190-70376fd6-d79c-4532-8f00-6732c05ec8aa.gif" title="KHTimer" alt="KHTimer"/>
+<img width="80%" src="https://user-images.githubusercontent.com/83811729/128401653-e4197a0e-a9d5-4b09-baf3-e516d6506754.png" title="KHTimer" alt="KHTimer"/>
 
 * Description Link
 
