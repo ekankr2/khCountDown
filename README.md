@@ -24,9 +24,8 @@ a D-Day timer for the end of KH Academy course.
 
   * **Blog: [KH Timer][timer Link]**
 
-[timer Link](https://blog.naver.com/ekankr2/222417168076){: target="_blank"}
+[timer Link]<https://blog.naver.com/ekankr2/222417168076>{: target="_blank"}
 
-<a href="https://blog.naver.com/ekankr2/222417168076" target="_blank">KH Timer</a>
 -----------------------------------
 
 ## vueWeather
@@ -50,4 +49,4 @@ a weather web app with Vue
 
   * **Blog: [Vue Weather][vueweather Link]**
 
-[vueweather Link](https://blog.naver.com/ekankr2/222460742857){: target="_blank"}
+[vueweather Link]<https://blog.naver.com/ekankr2/222460742857>{: target="_blank"}
