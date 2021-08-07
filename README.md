@@ -18,7 +18,7 @@ a D-Day timer for the end of KH Academy course.
     * CSS3
     * JavaScript
 
-<img width="80%" src="https://user-images.githubusercontent.com/83811729/128401653-e4197a0e-a9d5-4b09-baf3-e516d6506754.png" title="KHTimer" alt="KHTimer"/>
+<img width="60%" src="https://user-images.githubusercontent.com/83811729/128401653-e4197a0e-a9d5-4b09-baf3-e516d6506754.png" title="KHTimer" alt="KHTimer"/>
 
 * Description Link
 
@@ -42,7 +42,7 @@ a weather web app with Vue
     * JavaScript
          * Vue
 
-<img width="50%" src="https://user-images.githubusercontent.com/83811729/128591928-f8731674-2bb8-496e-84bf-bf6c85008b07.PNG" title="hot" alt="hot"/>
+<img width="60%" src="https://user-images.githubusercontent.com/83811729/128591928-f8731674-2bb8-496e-84bf-bf6c85008b07.PNG" title="hot" alt="hot"/>
 
 
 * Description Link
