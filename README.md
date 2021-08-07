@@ -26,6 +26,7 @@ a D-Day timer for the end of KH Academy course.
 
 [timer Link](https://blog.naver.com/ekankr2/222417168076){: target="_blank"}
 
+<a href="https://blog.naver.com/ekankr2/222417168076" target="_blank">KH Timer</a>
 -----------------------------------
 
 ## vueWeather
