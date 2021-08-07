@@ -22,9 +22,9 @@ a D-Day timer for the end of KH Academy course.
 
 * Description Link
 
-  * **Blog: [KH Timer][timer Link]**
+    * **Blog: [KH Timer][timer Link]**
 
-[timer Link]<https://blog.naver.com/ekankr2/222417168076>{: target="_blank"}
+[timer Link]: https://blog.naver.com/ekankr2/222417168076:target="_blank" 
 
 -----------------------------------
 
@@ -40,13 +40,13 @@ a weather web app with Vue
     * HTML5
     * CSS3
     * JavaScript
-         * Vue
+        * Vue
 
 <img width="60%" src="https://user-images.githubusercontent.com/83811729/128591928-f8731674-2bb8-496e-84bf-bf6c85008b07.PNG" title="hot" alt="hot"/>
 
 
 * Description Link
 
-  * **Blog: [Vue Weather][vueweather Link]**
+    * **Blog: [Vue Weather][vueweather Link]**
 
-[vueweather Link]<https://blog.naver.com/ekankr2/222460742857>{: target="_blank"}
+[vueweather Link]: https://blog.naver.com/ekankr2/222460742857:target="_blank"
