@@ -40,10 +40,10 @@ a weather web app with Vue
     * HTML5
     * CSS3
     * JavaScript
-      *Vue
+         *Vue
 
 <img width="50%" src="https://user-images.githubusercontent.com/83811729/128591718-10bfb16c-b840-4d80-86d4-7e773733dd61.PNG" title="hot" alt="hot"/>
-<img width="50%" src="https://https://user-images.githubusercontent.com/83811729/128591745-626d7c3e-f2b0-4309-ba65-9db34dedfbd2.PNG" title="cold" alt="cold"/>
+<img width="50%" src="https://user-images.githubusercontent.com/83811729/128591745-626d7c3e-f2b0-4309-ba65-9db34dedfbd2.PNG" title="cold" alt="cold"/>
 
 * Description Link
 
