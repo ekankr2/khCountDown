@@ -8,7 +8,7 @@ space for making mini projects
 ## KHTimer
 
 ```
-a D-Day timer for the end of KH Academy course.
+a D-Day timer for the end of my course.
 ```
 
 
