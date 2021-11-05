@@ -1,7 +1,7 @@
 <template>
+  <!-- :class : 클래스 바인딩 - 조건이 true 이면 앞에꺼, 아니면 뒤에꺼 적용 -->
   <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ?
 'warm' : ''">
-    <!-- :class : 클래스 바인딩 - 조건이 true 이면 앞에꺼, 아니면 뒤에꺼 적용 -->
     <main>
       <div class="search-box">
         <input type="text" class="search-bar" placeholder="Search..."
@@ -24,13 +24,11 @@
 </template>
 
 <script>
-
-
 export default {
   name: 'App',
   data() {
     return {
-      api_key: '',
+      api_key: '6d523938fc6d2de1fe87a72c783a4d33',
 
       url_base: 'https://api.openweathermap.org/data/2.5/',
       // https://openweathermap.org/current
