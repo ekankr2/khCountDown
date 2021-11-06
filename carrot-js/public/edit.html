@@ -35,7 +35,10 @@
 </nav>
 
 <div class="container mt-3">
-
+  <input type="text" class="form-control mt-2" id="title" placeholder="title">
+  <textarea class="form-control mt-2" id="content" placeholder="content"></textarea>
+  <input type="text" class="form-control mt-2" id="price" placeholder="price">
+  <button class="btn btn-danger mt-3" id="send">올리기</button>
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
@@ -72,21 +75,23 @@
 
   db.collection('product').doc(쿼리스트링.get('id')).get().then((result)=>{
     console.log(result.data())
-    var 템플릿 = `<input type="text" class="form-control mt-2" id="title" placeholder="${result.data().제목}">
-  <textarea class="form-control mt-2" id="content" placeholder="${result.data().내용}"></textarea>
-  <input type="text" class="form-control mt-2" id="price" placeholder="${result.data().가격}">
-  <button class="btn btn-danger mt-3" id="send">올리기</button>`
-    $('.container').append(템플릿)
+    $('#title').val(result.data().제목)
+    $('#content').val(result.data().내용)
+    $('#price').val(result.data().가격)
   })
-
 
   $('#send').click(function (){
+    var 바꿀거 = {
+      제목 : $('#title').val(),
+      가격 : $('#price').val(),
+    }
 
-    var file = document.querySelector('#image').files[0]
-    var storageRef = storage.ref()
-    var 저장할경로 = storageRef.child('image/' + file.name)
-    var 업로드작업 = 저장할경로.put(file)
+    db.collection('product').doc(쿼리스트링.get('id')).update(바꿀거)
   })
+
+
+
+
 
 
 

@@ -60,7 +60,16 @@
 
 <div class="container">
   상세페이지임
+  <div class="detail-pic my-4"></div>
+  <div>
+    <h5 class="author"></h5>
+    <hr>
+    <h5 class="title"></h5>
+    <p class="date"></p>
+    <p class="price"></p>
+  </div>
   <button id="edit">수정</button>
+  <button id="chat">채팅</button>
 
 </div>
 
@@ -73,22 +82,35 @@
   var 쿼리스트링 = new URLSearchParams(window.location.search)
   console.log(쿼리스트링.get('id'))
 
+  var 내uid = JSON.parse(localStorage.getItem('user')).uid
+  var 판매자uid
+  var 상품명
+
 
   db.collection('product').doc(쿼리스트링.get('id')).get().then((result)=>{
+    판매자uid = result.data().uid
+    상품명 = result.data().제목
     console.log(result.data())
-    var 템플릿 = `<div class="detail-pic my-4" style="background-image: url('${result.data().이미지}');"></div>
-  <div>
-    <h5>올린사람 : 김아무개</h5>
-    <hr>
-    <h5 class="title">${result.data().제목}</h5>
-    <p class="date">${result.data().날짜}</p>
-    <p class="price">${result.data().가격}원</p>
-  </div>`
-    $('.container').append(템플릿)
+    $('.author').html('올린사람 : ' + result.data().이름)
+    $('.title').html(result.data().제목)
+    $('.price').html(result.data().가격 + '원')
+    $('.detail-pic').css('background-image', `url(${result.data().이미지}`)
   })
 
   $('#edit').click(function (){
     window.location.href = '/edit.html?id=' + 쿼리스트링.get('id')
+  })
+
+  $('#chat').click(function (){
+
+    var 저장할거 = {
+      who : [내uid, 판매자uid],
+      product : 상품명,
+      date : new Date(),
+    }
+    db.collection('chatroom').add(저장할거).then((result)=>{
+      console.log(result)
+    })
   })
 
 
