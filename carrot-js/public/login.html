@@ -36,6 +36,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">사과마켓</a>
+    <span class="ms-auto mx-2" id="userName">이름</span>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -87,6 +88,20 @@
 
   const db = firebase.firestore()
   const storage = firebase.storage()
+
+  // 유저정보 확인
+  var 뺀거 = localStorage.getItem('user')
+
+  $('#userName').html(JSON.parse(뺀거).displayName)
+
+  firebase.auth().onAuthStateChanged((user)=>{
+    if(user){
+      console.log(user.uid)
+      console.log(user.displayName)
+      localStorage.setItem('user', JSON.stringify(user))
+    }
+
+  })
 
   $('#logout').click(function (){
     firebase.auth().signOut()
