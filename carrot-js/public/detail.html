@@ -60,6 +60,7 @@
 
 <div class="container">
   상세페이지임
+  <button id="edit">수정</button>
 
 </div>
 
@@ -84,6 +85,10 @@
     <p class="price">${result.data().가격}원</p>
   </div>`
     $('.container').append(템플릿)
+  })
+
+  $('#edit').click(function (){
+    window.location.href = '/edit.html?id=' + 쿼리스트링.get('id')
   })
 
 
