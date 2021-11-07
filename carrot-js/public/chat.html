@@ -118,8 +118,27 @@
         </li>`
       $('.chat-list').append(template)
 
-      $('.list-group-item').click(function (){
+      $('.list-group-item').click(function (e){
         채팅방id = $(this).children('.text-small').text()
+
+        e.stopImmediatePropagation()
+
+        // onSnapshot : 실시간 변경 반영영
+       // desc for backwards
+        db.collection('chatroom').doc(채팅방id).collection('messages').orderBy('date').onSnapshot(
+            (result)=>{
+              $('.chat-content').html('')
+              result.forEach((a)=>{
+                var template
+                var template2
+                if(a.data().uid === 내uid){
+                  template = `<li><span class="chat-box mine">${a.data().content}</span></li>`
+                } else{
+                  template = `<li><span class="chat-box">${a.data().content}</span></li>`
+                }
+            $('.chat-content').append(template)
+          })
+        })
       })
     })
   })
