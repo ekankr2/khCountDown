@@ -91,6 +91,21 @@
   const storage = firebase.storage()
   var 내uid = JSON.parse(localStorage.getItem('user')).uid
 
+  $('#send').click(function (){
+
+    var 데이터 = {
+      content : $('#chat-input').val(),
+      date : new Date(),
+      uid : 내uid,
+    }
+
+    db.collection('chatroom').doc(채팅방id).collection('messages').add(데이터)
+  })
+
+  var 채팅방id
+
+
+
   // .where('who', 'array-contains-any', ['고구마', '돼지감자자'])
   // .where('product', 'in', ['고구마', '돼지감자자'])
 
@@ -102,6 +117,10 @@
           <h6 class="text-small">${ a.id }</h6>
         </li>`
       $('.chat-list').append(template)
+
+      $('.list-group-item').click(function (){
+        채팅방id = $(this).children('.text-small').text()
+      })
     })
   })
 
