@@ -125,7 +125,7 @@
 
         // onSnapshot : 실시간 변경 반영영
        // desc for backwards
-        db.collection('chatroom').doc(채팅방id).collection('messages').orderBy('date').onSnapshot(
+        db.collection('chatroom').doc(채팅방id).collection('messages').orderBy('date','desc').onSnapshot(
             (result)=>{
               $('.chat-content').html('')
               result.forEach((a)=>{
