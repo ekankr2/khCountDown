@@ -77,9 +77,9 @@
         결과.forEach((doc)=>{
             console.log(doc.data())
             var 템플릿 = `<div class="product">
-        <div class="thumbnail" style="background-image: url(${doc.data().이미지})"></div>
+        <div class="thumbnail" style="background-image: url(${doc.data().image})"></div>
         <div class="flex-grow-1 p-4">
-            <h5 class="title"><a href="/detail.html?id=${doc.id}">${doc.data().subject}</a></h5>
+            <h5 class="title"><a href="/detail.html?id=${doc.id}">${doc.data().title}</a></h5>
             <p class="date">2030년 1월 8일</p>
             <p class="price">${doc.data().price}</p>
             <p class="float-end">🤍0</p>

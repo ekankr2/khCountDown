@@ -75,14 +75,14 @@
 
   db.collection('product').doc(쿼리스트링.get('id')).get().then((result)=>{
     console.log(result.data())
-    $('#title').val(result.data().subject)
+    $('#title').val(result.data().title)
     $('#content').val(result.data().content)
     $('#price').val(result.data().price)
   })
 
   $('#send').click(function (){
     var 바꿀거 = {
-      subject : $('#title').val(),
+      title : $('#title').val(),
       price : $('#price').val(),
     }
 

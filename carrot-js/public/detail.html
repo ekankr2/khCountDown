@@ -82,17 +82,23 @@
   var 쿼리스트링 = new URLSearchParams(window.location.search)
   console.log(쿼리스트링.get('id'))
 
-  var 내uid = JSON.parse(localStorage.getItem('user')).uid
+  var 내uid
+
+  if(localStorage.getItem('user') !== null){
+    내uid = JSON.parse(localStorage.getItem('user')).uid
+  }
+
+
   var 판매자uid
   var 상품명
 
 
   db.collection('product').doc(쿼리스트링.get('id')).get().then((result)=>{
     판매자uid = result.data().uid
-    상품명 = result.data().subject
+    상품명 = result.data().title
     console.log(result.data())
     $('.author').html('올린사람 : ' + result.data().name)
-    $('.title').html(result.data().subject)
+    $('.title').html(result.data().title)
     $('.price').html(result.data().price + '원')
     $('.detail-pic').css('background-image', `url(${result.data().image}`)
   })
