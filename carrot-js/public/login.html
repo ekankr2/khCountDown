@@ -35,24 +35,20 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">사과마켓</a>
-    <span class="ms-auto mx-2" id="userName">이름</span>
+    <a class="navbar-brand" href="/">사과마켓</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link active" aria-current="page" href="login.html">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link" href="signup.html">Sign Up</a>
         </li>
       </ul>
     </div>
@@ -61,23 +57,10 @@
 
 <div class="container mt-3">
   <div class="mb-3">
-    <input type="text" class="form-control" placeholder="name" id="name-new">
+    <input type="email" class="form-control" placeholder="이메일" id="email">
   </div>
   <div class="mb-3">
-    <input type="email" class="form-control" placeholder="email" id="email-new">
-  </div>
-  <div class="mb-3">
-    <input type="password" class="form-control" placeholder="pw" id="pw-new">
-  </div>
-  <button type="submit" class="btn btn-primary" id="register">가입하기</button>
-</div>
-
-<div class="container mt-3">
-  <div class="mb-3">
-    <input type="email" class="form-control" placeholder="email" id="email">
-  </div>
-  <div class="mb-3">
-    <input type="password" class="form-control" placeholder="pw" id="pw">
+    <input type="password" class="form-control" placeholder="비밀번호" id="pw">
   </div>
   <button type="submit" class="btn btn-primary" id="login">로그인하기</button>
   <button type="submit" class="btn btn-primary" id="logout">로그아웃</button>

@@ -17,6 +17,10 @@
     font-size: 17px;
     font-weight: 600;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
 .product .date {
     color: grey;
     font-size: 13px;
